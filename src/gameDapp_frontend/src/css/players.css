@@ -1,0 +1,42 @@
+.players {
+    width: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.player {
+    border: 2px solid #195ef4;
+    border-radius: 5%;
+    padding: .5rem 0;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+    .players {
+        width: 80vw; /* Adjust width for smaller screens */
+    }
+
+    .player {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        width: 20vw; /* Adjust width for smaller screens */
+    }
+}
+
+/* Media queries for smaller phones */
+@media screen and (max-width: 480px) {
+    .players {
+        width: 90vw; /* Further adjust width for smaller phones */
+    }
+
+    .player {
+        font-size: 0.75rem; /* Further adjust font size for smaller phones */
+        width: 30vw; /* Further adjust width for smaller phones */
+    }
+}
